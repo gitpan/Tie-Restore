@@ -24,20 +24,20 @@ Works for any kind of tie. (scalar, array, hash, filehandle)
 
 =item *
 
+05/22/02 - fixed problem with old .tar.gz - version 0.11
+
+=item *
+
 11/03/01 - Robby Walker - added documentation - version 0.1
 
 =back
-
-=head1 METHODS
-
-=over 4
 
 =cut
 #----------------------------------------------------------
 
 package Tie::Restore;
 
-our $VERSION = 0.1;
+our $VERSION = 0.11;
 
 sub TIESCALAR { $_[1] }
 sub TIEARRAY  { $_[1] }
@@ -47,10 +47,6 @@ sub TIEHANDLE { $_[1] }
 1;
 
 __END__
-
-=pod
-
-=back
 
 =head1 BUGS
 
